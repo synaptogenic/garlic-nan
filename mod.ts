@@ -1,8 +1,17 @@
+/**
+ * Maximum value that can be stored in a NaN.
+ */
 export const max = 2 ** 51 - 1;
+
+/**
+ * Minimum value that can be stored in a NaN.
+ */
 export const min = -max;
 
-// write returns a NaN that stores a signed int in the range of
-// [-(2 ** 51 - 1)..(2 ** 51 - 1)].
+/**
+ * Returns a NaN that stores a signed int in the range of
+ * [-(2 ** 51 - 1)..(2 ** 51 - 1)].
+ */
 export function write(n: number): number {
   // Validate n is an int.
   if (!Number.isInteger(n)) throw new Error("n must be an int");
@@ -50,8 +59,10 @@ export function write(n: number): number {
   return dstView.getFloat64(0, false);
 }
 
-// read returns a signed int previously written to a NaN. If no value was
-// written 0 is returned.
+/**
+ * Returns a signed int previously written to a NaN. If no value was written 0
+ * is returned.
+ */
 export function read(n: number): number {
   // Validate n is a NaN
   if (!Number.isNaN(n)) throw new Error("n must be a NaN");
