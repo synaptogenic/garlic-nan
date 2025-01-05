@@ -68,6 +68,6 @@ convert garlic `NaN` back into plain `NaN` 😞 According to ECMA 262:
 
 ![for fun][for-fun]
 
-[bit-pattern]: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/IEEE_754_Double_Floating_Point_Format.svg/618px-IEEE_754_Double_Floating_Point_Format.svg.png
+[bit-pattern]: https://raw.githubusercontent.com/synaptogenic/garlic-nan/master/bit-pattern.png
 [bit-pattern-src]: https://commons.wikimedia.org/wiki/File:IEEE_754_Double_Floating_Point_Format.svg
 [for-fun]: https://raw.githubusercontent.com/synaptogenic/garlic-nan/master/fun.gif
