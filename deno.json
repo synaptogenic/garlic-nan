@@ -4,6 +4,7 @@
   "license": "MIT",
   "exports": "./mod.ts",
   "tasks": {
+    "test": "deno test --ignore=npm",
     "dev": "deno test --watch *.ts",
     "clean": "rm -r npm",
     "build-npm": "deno run --allow-all scripts/build_npm.ts $(jq --raw-output .version deno.json)",
